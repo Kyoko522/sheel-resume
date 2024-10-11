@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.3in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.00\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{1.00\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.00\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+    
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize} \vspace{-18pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\huge \scshape Sheel Patel} \\ 
+    \vspace{3pt}
+    \small Toronto, ON $|$
+    \vspace{3pt}
+    \small s60patel@torontomu.ca $|$
+    \vspace{3pt}
+    \small (647) 870-4641 $|$
+    \href{https://www.linkedin.com/in/s60patel/}
+    {\color{blue}{\underline{LinkedIn}}} $|$
+    \href{https://github.com/Kyoko522/}{\color{blue}{\underline{GitHub}}} $|$
+    \href{https://sheel-react-portfolio.netlify.app/}{\color{blue}{\underline{Website}}}
+    \vspace{-9pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Toronto Metropolitan University (formerly Ryerson University)}{Toronto, ON}
+      {Bachelor of Science, Computer Science Co-op}{Sep 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Courses}: Data Structures \& Algorithms, Operating Systems}
+        \resumeItem{\textbf{Extra Curricular}: MOSS (Metropolitan Open Source Society), PACS (Practical Applications of Computer Science)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Full Stack Developer}{Sept 2023 -- Jun 2024}
+      {Practical Applications of Computer Science (TMU Club)}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{\textbf{Developed} and \textbf{launched} a faculty website with over 500 monthly views, increasing visibility for the Undergraduate Science Society of TMU and boosting engagement among students and faculty.}
+        
+        \resumeItem{Led the development of a food management application that \textbf{optimized event food usage}, reducing waste and increasing sustainability at club events, positively impacting over \textbf{500 students}.}
+        \resumeItem{\textbf{Managed} the full project life-cycle, from concept to deployment, using \textbf{Kotlin}, \textbf{Firebase}, and \textbf{Android Studio}, ensuring seamless integration and delivering a successful product within the club's timeline.}
+
+        \resumeItem{\textbf{Guided} a team of staff and volunteers, \textbf{fostering collaboration and clear communication}, resulting in timely project completion and a more engaged team.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Lifeguard}{May 2023 -- Sept 2024}
+      {Canada's Wonderland}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Demonstrated \textbf{commitment} by \textbf{ensuring safety} and enforcing pool regulations throughout each shift, \textbf{staying attentive} even during high-stress situations.}
+        \resumeItem{Engaged in \textbf{continuous learning} through regular training drills and updates on safety protocols to maintain readiness for emergencies.}
+        \resumeItem{Showcased \textbf{decision-making abilities} in quickly assessing and responding to potential hazards, administering first aid, and performing rescues when necessary.}
+        \resumeItem{Fostered \textbf{relationship building} by effectively communicating with patrons and colleagues to create a welcoming and secure environment and exhibited \textbf{flexibility and adaptability} by adjusting to safety measures accordingly to handle diverse challenges.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \vspace{-3pt}
+      \resumeProjectHeading
+        {
+        \textbf{\href{https://github.com/Kyoko522/Dance-Club-Management-App}
+        {\color{blue}\underline{Dance Club Management System}}}
+        }{\textbf{Vue $|$ Azure $|$ Go $|$ Docker $|$ Git $|$ GitHub}}
+        \resumeItemListStart
+            \resumeItem{Developed a management system as a class assignment to enhance operational efficiency in a simulated dance club environment.}
+            \resumeItem{Built the front-end with Vue.js, \textbf{creating a user-friendly interface} that \textbf{improved scheduling and attendance tracking efficiency by 40\%} compared to previous manual methods. }
+            \resumeItem{Employed \textbf{process mapping techniques} to streamline operations, testing alternative solutions to enhance efficiency, while utilizing \textbf{Go and SQLite3 for robust back-end development}, ensuring data accuracy and process compliance, while also leveraging automation for critical tasks such as scheduling.}
+            \resumeItem{Implemented JWT for \textbf{secure authentication, demonstrating skills in dynamic access control} and session management.}
+          \resumeItemListEnd
+      \vspace{-7pt}
+      \resumeProjectHeading
+          {
+          \textbf{\href{https://tasktonic.netlify.app/}{\color{blue}\underline{Task Tonic}}}
+          }{\textbf{HTML $|$ CSS $|$ JavaScript}}
+          \resumeItemListStart
+            \resumeItem{Developed TaskTonic, a simple and intuitive to-do app designed to boost productivity by allowing users to easily organize and manage tasks.}
+            \resumeItem{Implemented key features such as \textbf{drag-and-drop functionality, task editing, and removal}, providing users with flexible control over their to-do lists and enhancing overall task management.}
+            \resumeItem{Utilized local storage to ensure \textbf{persistent data management}, allowing users to retain their task information across sessions without the need for an external database.}
+          \resumeItemListEnd
+      \vspace{-3pt}
+    \resumeSubHeadingListEnd
+    
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.0in, label={}]
+    \small{\item{
+     \textbf{Computer Languages}{: Python, Java, C, C\#, SQL, HTML, CSS, JavaScript/TypeScript, Lisp, Perl, PHP, Ruby} \\
+     \textbf{Tools \& Frameworks}{: ReactJS, .NET, MySQL, Supabase, Tailwind CSS, Bootstrap, JQuery, PyQt} \\
+     \textbf{Developer Tools}{: Git/GitHub, Docker, Postman, Visual Studio/Code, Unix/Linux} \\
+     \textbf{Awards}{: Python Certification, Java Certification, Responsive Web Design Certification}
+    }}
+ \end{itemize}
+%-------------------------------------------
+\end{document}
